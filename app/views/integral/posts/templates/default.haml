@@ -1,6 +1,6 @@
 = link_to 'Edit', edit_backend_post_url(@post.id), class: 'button primary button--edit-resource', data: { 'turbolinks' => 'false' } if current_user.present?
 = link_to posts_url, class: 'view-all' do
-  = icon('list')
+  = icon('fas', 'list')
   VIEW ALL BLOG POSTS
 = render layout: 'integral/shared/blog_layout', locals: { title: @post.title, subtitle: @post.header_tags, image: @post.image(:large) } do
   %p
@@ -12,13 +12,13 @@
     %p
       %span{ 'data-open' => 'share-modal' }= t('integral.actions.share')
       = link_to facebook_share_url, target: :blank do
-        = icon('facebook')
+        = icon('fab', 'facebook')
       = link_to twitter_share_url(message: @post.title), target: :blank do
-        = icon('twitter')
+        = icon('fab', 'twitter')
       = link_to google_plus_share_url, target: :blank do
-        = icon('google-plus')
+        = icon('fab', 'google-plus')
       = link_to linkedin_share_url(message: @post.title), target: :blank do
-        = icon('linkedin')
+        = icon('fab', 'linkedin')
 
   %ul.tag-list.left
     - @post.tags_on(@post.tag_context).each do |tag|

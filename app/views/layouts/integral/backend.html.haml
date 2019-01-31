@@ -13,10 +13,10 @@
             .app-dashboard-close-sidebar
               = image_tag(image_path('integral/backend/logo.png'))
               %button#close-sidebar.app-dashboard-sidebar-close-button.show-for-medium{ data: { 'app-dashboard-toggle-shrink' => true }, 'aria-label' => "Close menu", type: "button" }
-                = icon('bars')
+                = icon('fas', 'bars')
             .app-dashboard-open-sidebar
               %button#open-sidebar.app-dashboard-open-sidebar-button.show-for-medium{ data: { 'app-dashboard-toggle-shrink' => true }, 'aria-label' => "open menu", type: "button" }
-                = icon('bars')
+                = icon('fas', 'bars')
 
           .app-dashboard-sidebar-inner
             -# TODO - Set multi-open to false. Currently hides - is-active items. Bug in Foundation
@@ -36,7 +36,7 @@
               %ul.menu
                 %li.view-site
                   = link_to main_app.root_path, class: 'button clear' do
-                    = icon('eye')
+                    = icon('far', 'eye')
                     = t('integral.actions.view_main_site')
                 %li
                   %button.button.clear.avatar{ type: 'button', data: { toggle: 'profile-dropdown'}}= image_tag(current_user.avatar.url(:thumbnail), class: 'avatar')
@@ -49,7 +49,7 @@
                       %ul.menu.vertical
                         %li
                           = link_to backend_account_url do
-                            = icon('user')
+                            = icon('far', 'user')
                             %span= t('integral.navigation.profile')
                         -# %li
                         -#   = link_to new_backend_post_url do
@@ -68,7 +68,7 @@
 
                 %li.toggle-menu
                   %button{ type: 'button', data: { open: 'app-dashboard-sidebar' }}
-                    = icon('bars')
+                    = icon('fas', 'bars')
 
           -# TODO: Ideally this would be using Foundations sticky plugin however this does not work within offcanvas (yet)
           -# https://github.com/zurb/foundation-sites/pull/10408
@@ -77,7 +77,7 @@
               %ul.menu
                 %li
                   = link_to main_app.root_path, class: 'button clear' do
-                    = icon('eye')
+                    = icon('far', 'eye')
                     = t('integral.actions.view_main_site')
 
             .top-bar-right

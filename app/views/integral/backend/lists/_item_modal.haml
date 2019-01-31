@@ -17,11 +17,11 @@
               %h5= formatted_item.title
               %span.subtitle= formatted_item.subtitle
               %span.url= formatted_item.url
-            = icon('edit')
+            = icon('far', 'edit')
           .text-right
             %small
               Override defaults
-              = icon('chevron-down')
+              = icon('fas', 'chevron-down')
       .cell
         = f.input :title, wrapper_html: { class: 'alternative' }, input_html: { class: formatted_item.title_required? ? 'title-field required' : 'title-field' }
       .cell.medium-8.link-attribute{ class: f.object.basic? || !f.object.persisted? ? 'hide' : '' }

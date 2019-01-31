@@ -40,10 +40,10 @@
       max-height: 30px;
     }
     background-color: $primary-color;
-    .app-dashboard-open-sidebar .fa {
+    .app-dashboard-open-sidebar .fas {
       font-size: 1.25em;
     }
-    .fa {
+    .far, .fas, .fa {
       color: $white;
       vertical-align: super;
       line-height: 30px;
@@ -178,7 +178,7 @@
       transform: rotate(45deg);
       right: 2em;
     }
-    .fa {
+    .fa, .far, .fas {
       width: 1.25em;
       text-align: center;
       margin-right: 0.25em;
@@ -457,7 +457,7 @@
       .dropdown.menu.vertical > li.opens-right > a::after {
         content: none;
       }
-      .fa {
+      .fa, .fas, .far {
         margin-right: 0;
       }
     }

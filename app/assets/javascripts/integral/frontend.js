@@ -6,9 +6,9 @@
 //= require foundation
 //= require i18n
 //= require i18n/translations
-//= require toastr
 //= require rails.validations
 //= require rails.validations.simple_form
+//= require integral/support/lib/toastr
 //= require integral/support/date_picker/picker
 //= require integral/support/date_picker/picker.date
 //= require integral/support/date_picker

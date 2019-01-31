@@ -16,7 +16,6 @@
 //= require foundation
 //= require nprogress
 //= require nprogress-turbolinks
-//= require toastr
 //= require rails.validations
 //= require rails.validations.simple_form
 //= require parsley
@@ -25,6 +24,7 @@
 //= require i18n
 //= require i18n/translations
 //= require_directory ./support
+//= require ./support/lib/toastr
 //= require ./support/lib/underscore
 //= require ./support/lib/html.sortable
 //= require ./support/lib/jquery_form

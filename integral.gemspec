@@ -32,7 +32,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'devise', '~> 4.5.0' # Authentication
   s.add_dependency 'devise_invitable', '~> 1.7' # Invitable authentication
   s.add_dependency 'draper', '~> 3.0' # Object decoration
-  s.add_dependency 'font-awesome-sass', '~> 4.3' # Grid Icons
+  s.add_dependency 'font-awesome-sass', '~> 5.6.1' # Icons
   s.add_dependency 'foundation-rails', '~> 6.4.1' # Foundation UI Framework
   s.add_dependency 'friendly_id', '~> 5.2' # Slugging
   s.add_dependency 'gaffe', '~> 1.2' # Custom error pages
@@ -56,7 +56,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'simple_form', '~> 4.0' # Form builder
   s.add_dependency 'sitemap_generator', '~> 6.0.1' # Sitemap Generator
   s.add_dependency 'slack-notifier', '~> 1.5' # Slack bot
-  s.add_dependency "toastr-rails", "~> 1.0" # Javascript notification Toastr
   s.add_dependency 'turbolinks', '~> 5.0'
   s.add_dependency 'datagrid', '~> 1.5.8' # Grids
   s.add_dependency 'will_paginate', '~> 3.1' # Pagination

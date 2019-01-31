@@ -1,6 +1,6 @@
 - if display_newsletter_signup_widget?
   .blog-widget.newsletter-signup
-    = icon('envelope-open')
+    = icon('fas', 'envelope-open')
     %h4= t('integral.blog.widgets.newsletter_signup.title')
     %p= t('integral.blog.widgets.newsletter_signup.subtitle')
     = simple_form_for Integral::NewsletterSignup.new, url: newsletter_signup_url, validate: true, remote: true, html: { class: 'remote-form', data: { 'remote-form-success-message' => t('integral.blog.widgets.newsletter_signup.success') }} do |f|

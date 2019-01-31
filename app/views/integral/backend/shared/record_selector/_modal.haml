@@ -20,10 +20,10 @@
             - if defined?(create_modal)
               .top-bar-right
                 %button.button.create-button{ data: { 'target' => create_modal }}
-                  = icon('cloud-upload')
+                  = icon('fas', 'cloud-upload-alt')
                   = t('integral.actions.upload')
         .loader.text-center
-          = icon('spinner', class: 'fa-pulse fa-3x fa-fw')
+          = icon('fas', 'spinner', class: 'fa-pulse fa-3x fa-fw')
           %span.sr-only Loading..
 
         .records

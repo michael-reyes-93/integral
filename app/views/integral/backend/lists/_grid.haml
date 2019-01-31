@@ -7,8 +7,8 @@
           %td= record.description
           %td.actions
             = link_to edit_backend_list_url(record) do
-              = icon('edit')
+              = icon('far', 'edit')
             = link_to backend_list_url(record), method: :delete, data: { confirm: t('integral.actions.confirmation.deletion') } do
-              = icon('remove')
+              = icon('far', 'trash-alt')
     - else
       = render partial: 'integral/backend/shared/empty_grid'

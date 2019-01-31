@@ -10,15 +10,15 @@
                 = image_tag @resource.avatar.url(:small), class: :avatar
               .cell.medium-8
                 = link_to edit_backend_user_url(@resource), class: :settings do
-                  = icon('cog')
+                  = icon('fas', 'cogs')
                 %h2= @resource.name
                 -# TODO: Implement title/position for Integral::User
                 -#%h3 Director
                 %p
-                  = icon('envelope')
+                  = icon('far', 'envelope')
                   = @resource.email
                 %p
-                  = icon('calendar')
+                  = icon('far', 'calendar')
                   = t('.member_since', start_date: l(@resource.created_at))
 
                 .roles

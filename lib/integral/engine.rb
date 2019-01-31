@@ -6,7 +6,6 @@ module Integral
     require 'jquery-rails'
     require 'groupdate'
     require 'turbolinks'
-    require 'toastr-rails'
     require 'nprogress-rails'
     require 'simple_form'
     require 'gibbon'

@@ -1,12 +1,12 @@
 %li
   = link_to backend_dashboard_url do
-    = icon('home')
+    = icon('fas', 'home')
     %span= t('integral.navigation.dashboard')
 
 - if policy(Integral::Page).index?
   %li
     = link_to backend_pages_url do
-      = icon('file')
+      = icon('far', 'file')
       %span= t('integral.navigation.pages')
     %ul
       %li= t('integral.navigation.pages')
@@ -22,7 +22,7 @@
 - if policy(Integral::Post).index? && Integral.blog_enabled?
   %li
     = link_to backend_posts_url do
-      = icon('rss')
+      = icon('fas', 'rss')
       %span= t('integral.navigation.posts')
     %ul
       %li= t('integral.navigation.posts')
@@ -37,7 +37,7 @@
 - if policy(Integral::List).index?
   %li
     = link_to backend_lists_url do
-      = icon('list')
+      = icon('fas', 'list')
       %span= t('integral.navigation.lists')
     %ul
       %li= t('integral.navigation.lists')
@@ -52,7 +52,7 @@
 - if policy(Integral::Image).manager?
   %li
     = link_to backend_img_index_url do
-      = icon('picture-o')
+      = icon('far' ,'images')
       %span= t('integral.navigation.images')
     %ul
       %li= t('integral.navigation.images')
@@ -67,7 +67,7 @@
 - if policy(current_user).manager?
   %li
     = link_to backend_users_url do
-      = icon('users')
+      = icon('fas', 'users')
       %span=t('integral.navigation.users')
     %ul
       %li= t('integral.navigation.users')
@@ -81,11 +81,11 @@
 - if policy(Integral::Version).manager?
   %li
     = link_to backend_activities_url do
-      = icon('crosshairs')
+      = icon('fas', 'history')
       %span=t('integral.navigation.activities')
 
 - if current_user.admin?
   %li
     = link_to backend_settings_url do
-      = icon('cog')
+      = icon('fas', 'cogs')
       %span=t('integral.navigation.settings')

@@ -2,7 +2,7 @@
 = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }, validate: true) do |f|
   .input-group
     %span.input-group-label
-      = icon('envelope')
+      = icon('far', 'envelope')
     = f.input :email, autofocus: true, input_html: { class: 'input-group-field' }, label: false
 
   .form-actions

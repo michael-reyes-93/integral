@@ -10,12 +10,12 @@
           %td= l(record.updated_at, format: :long)
           %td.actions
             = link_to record.path do
-              = icon('eye')
+              = icon('far', 'eye')
             - if policy(Integral::Page).update?
               = link_to edit_backend_page_url(record) do
-                = icon('edit')
+                = icon('far', 'edit')
             - if policy(Integral::Page).destroy?
               = link_to backend_page_url(record), method: :delete, data: { confirm: t('integral.actions.confirmation.deletion') } do
-                = icon('remove')
+                = icon('far', 'trash-alt')
     - else
       = render partial: 'integral/backend/shared/empty_grid'

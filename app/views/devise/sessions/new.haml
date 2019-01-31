@@ -2,12 +2,12 @@
 = simple_form_for(resource, as: resource_name, url: session_path(resource_name), validate: true) do |f|
   .input-group
     %span.input-group-label
-      = icon('envelope')
+      = icon('far', 'envelope')
     = f.input :email, autofocus: true, input_html: { class: 'input-group-field', value: Rails.env.development? ? Integral::User.first&.email : nil }, label: false
 
   .input-group
     %span.input-group-label
-      = icon('key')
+      = icon('fas', 'key')
     = f.input :password, input_html: { class: 'input-group-field', 'data-character-counter' => 'false', value: Rails.env.development? ? 'password' : nil }, label: false
   = f.input :remember_me, as: :boolean
 
